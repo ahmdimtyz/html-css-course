@@ -7,11 +7,62 @@
         width: 105px;
         border-radius: 2px;
         cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.15s;
+    }
+
+    .sub-button:hover {
+        opacity: 0.8;
+    }
+
+    .sub-button:active {
+       opacity: 0.4;
     }
 
     .join-button {
-        border-color: rgb(44, 44, 162);
+        background-color: white;
+        border-color: rgb(41, 118, 211);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(41, 118, 211);
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: background-color 0.15s, color 0.1s;
     }
+
+    .join-button:hover { 
+        background-color: rgb(41, 118, 211);
+        color: white;
+    }
+
+    .join-button:active {
+        opacity: 0.7;
+    }
+
+    .tweet-button{
+        background-color: rgb(29, 161, 242);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 74px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: box-shadow 0.15s;
+    }
+
+    .tweet-button:hover { 
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .tweet-button:active {
+        opacity: 0.7;
+    }
+
 </style>
 
 <button class = "sub-button">
@@ -20,4 +71,8 @@
 
 <button class = "join-button">
     JOIN
+</button>
+
+<button class = "tweet-button">
+    Tweet
 </button>
